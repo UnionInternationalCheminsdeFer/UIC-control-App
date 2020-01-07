@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nl.ns.barcode_tester">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.scanner.ScannerActivity"
+            android:label="@string/title_activity_main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.detail.TicketDetailActivity"
+            android:label="@string/title_activity_ticket_detail" />
+        <activity
+            android:name=".activity.table.FieldsTableActivity"
+            android:label="@string/title_activity_fields_table" />
+        <activity
+            android:name=".activity.keys.ManageKeysActivity"
+            android:label="@string/title_activity_manage_keys"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.keys.DownloadKeysActivity"
+            android:label="@string/title_activity_download_keys" />
+        <activity
+            android:name=".activity.settings.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activity.keys.AddKeyActivity"
+            android:label="@string/title_activity_add_key" />
+    </application>
+
+</manifest>
