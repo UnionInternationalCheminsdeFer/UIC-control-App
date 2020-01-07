@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <HorizontalScrollView
+        android:id="@+id/scroll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_gravity="center"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+        <TextView android:id="@+id/label_ticket_contents"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:textSize="12dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </HorizontalScrollView>
+    <FrameLayout
+        android:layout_below="@id/scroll_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/label_swipe_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_swap_horiz"
+            android:drawableLeft="@drawable/ic_swap_horiz"
+            android:drawablePadding="8dp"
+            android:text="@string/label_swipe"
+            android:layout_gravity="center_horizontal" />
+    </FrameLayout>
+
+
+
+</RelativeLayout>

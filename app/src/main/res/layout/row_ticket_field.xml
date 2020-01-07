@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="4dp">
+            <android.support.percent.PercentRelativeLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/label_line"
+                    app:layout_widthPercent="12%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_line"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:id="@+id/text_line"
+                    android:layout_toRightOf="@id/label_line"
+                    app:layout_widthPercent="7%"
+                    style="@style/AppTheme.Table.Text.Bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/label_column"
+                    app:layout_widthPercent="15%"
+                    android:layout_toRightOf="@id/text_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_column"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:id="@+id/text_column"
+                    android:layout_toRightOf="@id/label_column"
+                    style="@style/AppTheme.Table.Text.Bold"
+                    app:layout_widthPercent="8%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/label_height"
+                    app:layout_widthPercent="15%"
+                    android:layout_toRightOf="@id/text_column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_height"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:id="@+id/text_height"
+                    android:layout_toRightOf="@id/label_height"
+                    style="@style/AppTheme.Table.Text.Bold"
+                    app:layout_widthPercent="6%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="1"/>
+
+                <TextView
+                    android:id="@+id/label_width"
+                    app:layout_widthPercent="16%"
+                    android:layout_toRightOf="@id/text_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_width"
+                    android:textAllCaps="true"/>
+                <TextView
+                    android:id="@+id/text_width"
+                    android:layout_toRightOf="@id/label_width"
+                    style="@style/AppTheme.Table.Text.Bold"
+                    app:layout_widthPercent="8%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/text_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:typeface="monospace"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="1dp"
+        android:background="?android:attr/dividerVertical" />
+
+
+</LinearLayout>

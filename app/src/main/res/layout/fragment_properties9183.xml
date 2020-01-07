@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_travel_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="16dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="4dp">
+
+            <LinearLayout
+                android:id="@+id/error_travel_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_travel_details" />
+                <TextView
+                    android:id="@+id/label_error_travel_details"
+                    android:text="@string/error_no_fields"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/colorError"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/table_travel_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_travel_details" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_ticket_name"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_passenger_name"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_passenger_name"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_travel_class"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_class"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_validity"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/validity"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_outward_trip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_outward"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_return_trip"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_return"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_price"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/travel_price"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_ticket_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="16dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="4dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ticket_details" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_order_number"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_order_number"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_creation"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_barcode_creation"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_languages"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_languages"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_flags"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_flags"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+            </TableLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_barcode_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="16dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="4dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_barcode_details" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_carrier"
+                        android:textStyle="bold" />
+
+                    <nl.ns.barcode_tester.activity.detail.views.CarrierView
+                        android:id="@+id/view_carrier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2"></nl.ns.barcode_tester.activity.detail.views.CarrierView>
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:minHeight="36dp"
+                        android:text="@string/label_key_code"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/barcode_signature_id"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_signature_valid"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image_key_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_cancel_red" />
+
+                        <TextView
+                            android:id="@+id/label_key_available"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4dp" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/image_signature_valid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_cancel_red" />
+
+                        <TextView
+                            android:id="@+id/label_signature_valid"
+                            style="@style/Base.TextAppearance.AppCompat.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="4dp" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

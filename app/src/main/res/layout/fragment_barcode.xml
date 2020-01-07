@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/label_error_barcode"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:textColor="@color/colorError"/>
+
+    <ImageView
+        android:id="@+id/image_barcode"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

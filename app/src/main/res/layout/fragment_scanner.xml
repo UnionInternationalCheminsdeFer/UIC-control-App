@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nl.ns.barcode_tester.activity.scanner.ScannerFragment"
+    android:id="@+id/layout_scanner">
+
+    <!--<nl.ns.barcode_tester.activity.scanner.scanners.ManateeBarcodeView-->
+        <!--android:id="@+id/barcode"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_margin="0dp">-->
+    <!--</nl.ns.barcode_tester.activity.scanner.scanners.ManateeBarcodeView>-->
+</RelativeLayout>

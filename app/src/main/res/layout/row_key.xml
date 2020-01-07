@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android:android.support.v7.widget.CardView
+        android:id="@+id/card_ticket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_marginBottom="8dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:contentPadding="4dp"
+        card_view:cardCornerRadius="0dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:id="@+id/image_flag" />
+            <TextView
+                android:layout_toRightOf="@id/image_flag"
+                android:layout_centerVertical="true"
+                android:id="@+id/field_key_carrier"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="4dp"/>
+
+            <TextView
+                android:layout_toLeftOf="@+id/field_key_id"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/label_key_code"
+                android:paddingLeft="16dp"/>
+            <TextView
+                android:id="@id/field_key_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:paddingLeft="4dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </android:android.support.v7.widget.CardView>
+</LinearLayout>

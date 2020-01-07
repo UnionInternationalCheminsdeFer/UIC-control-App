@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="16dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_ticket_9182"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:paddingBottom="16dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="4dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_ticket_details" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_barcode_version"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_barcode_version"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="36dp">
+
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_carrier"
+                        android:textStyle="bold" />
+
+                    <nl.ns.barcode_tester.activity.detail.views.CarrierView
+                        android:id="@+id/view_carrier"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2"></nl.ns.barcode_tester.activity.detail.views.CarrierView>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_barcode_key_id"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_barcode_key_id"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_type"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_type"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_adults"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_adults"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_children"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_children"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_specimen"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_specimen"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_travel_class"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_travel_class"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_ticket_number"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ticket_number"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_issued_date"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_issued_date"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_return"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_return"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_validity"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_validity"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_station_from"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_departure"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_station_to"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_arrival"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_info_messages"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_info_messages"
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_weight="2" />
+                </TableRow>
+            </TableLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

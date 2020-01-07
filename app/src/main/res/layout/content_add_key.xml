@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_key"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="nl.ns.barcode_tester.activity.keys.AddKeyActivity"
+    tools:showIn="@layout/activity_add_key">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/edit_carrier"
+        android:hint="@string/label_hint_uic_code" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/edit_key"
+        android:layout_below="@+id/edit_carrier"
+        android:layout_alignLeft="@+id/edit_carrier"
+        android:layout_alignStart="@+id/edit_carrier"
+        android:inputType="text|textNoSuggestions"
+        android:hint="@string/label_hint_key_code" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:gravity="left|top"
+        android:layout_below="@+id/edit_key"
+        android:layout_alignLeft="@+id/edit_key"
+        android:layout_alignStart="@+id/edit_key"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/edit_certificate"
+        android:hint="@string/label_hint_certificate"
+        android:layout_above="@+id/button_add" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button"
+        android:textColor="@color/colorWhite"
+        android:id="@id/button_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

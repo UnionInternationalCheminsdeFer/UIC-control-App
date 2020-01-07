@@ -1,0 +1,25 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="keys"
+        android:icon="@drawable/ic_key_black"
+        android:title="@string/pref_keys"
+        android:summary="@string/pref_summ_keys">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="nl.ns.barcode_tester"
+            android:targetClass="nl.ns.barcode_tester.activity.keys.ManageKeysActivity" />
+    </Preference>
+
+    <Preference
+        android:key="keys"
+        android:icon="@drawable/ic_download"
+        android:title="@string/pref_download_keys"
+        android:summary="@string/pref_summ_download_keys">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="nl.ns.barcode_tester"
+            android:targetClass="nl.ns.barcode_tester.activity.keys.DownloadKeysActivity" />
+    </Preference>
+
+</PreferenceScreen>

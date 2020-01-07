@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="pref_static_license"
+        android:selectable="false"
+        android:title="@string/prefs_license"
+        android:summary="@string/prefs_license_content"/>
+
+</PreferenceScreen>

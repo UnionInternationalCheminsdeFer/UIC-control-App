@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="nl.ns.barcode_tester.activity.scanner.ScannerActivity">
+
+    <item android:id="@+id/action_download"
+        android:icon="@drawable/ic_download_white"
+        android:title="@string/action_download_keys"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+</menu>

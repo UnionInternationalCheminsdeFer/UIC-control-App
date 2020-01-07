@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/zoomButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/zoom" />
+
+    <ImageView
+        android:id="@+id/imageOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/overlay"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/transparent"
+        android:text="@string/label_pause"
+        android:visibility="gone"
+        />
+
+</merge>
